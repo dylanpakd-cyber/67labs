@@ -27,27 +27,27 @@ const Portrait = ({ which, color }) => {
 export const Operators = () => {
   const people = [
     {
-      init: "DP", color: "orange",
-      name: "Dylan Pak", ext: "01",
-      role: "ceo of touching grass",
-      bio: "19. Taiwan to Seattle. UW Foster at 16. 600M+ views, $1M dropshipping at 17. Builds binders, not models. Currently logged in.",
-      where: "SEA / SF", years: "head goblin",
-      url: "https://dylanpak.com",
-    },
-    {
       init: "OK", color: "lime",
-      name: "Ojas Kandhare", ext: "02",
-      role: "head of vibes & violence",
+      name: "Ojas Kandhare", ext: "01",
+      role: "ceo of touching grass",
       bio: "Ships the things. Lives in the diff. Refuses to talk about k8s. Strong opinions about ramen, tabs, and the correct way to fold a t-shirt.",
       where: "SF", years: "engineer-coded",
       url: "https://ojaskandy.life/",
     },
     {
+      init: "DP", color: "orange",
+      name: "Dylan Pak", ext: "02",
+      role: "chief doomscroll officer",
+      bio: "19. Taiwan to Seattle. UW Foster at 16. 600M+ views, $1M dropshipping at 17. Builds binders, not models. Currently logged in.",
+      where: "SEA / SF", years: "head goblin",
+      url: "https://dylanpak.com",
+    },
+    {
       init: "TY", color: "blue",
       name: "Tario You", ext: "03",
-      role: "chief brainrot officer",
+      role: "head of vibes & violence",
       bio: "In charge of tone, taste, and the group chat. Picks the soundtrack. Has been described, lovingly, as 'too online'.",
-      where: "LA / NYC", years: "vibe-coded",
+      where: "SEA / SF", years: "vibe-coded",
       url: "https://github.com/tario-you",
     },
   ];
