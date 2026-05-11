@@ -61,6 +61,7 @@ img, svg { display: block; max-width: 100%; }
 .nav-links a { padding: 4px 0; opacity: 0.75; transition: opacity .15s; }
 .nav-links a:hover { opacity: 1; }
 .nav-right { display: flex; align-items: center; gap: 14px; }
+.nav .cta { min-height: 0; padding: 6px 16px; }
 .clock { font-family: var(--mono); font-size: 11px; color: var(--mute); }
 .cta { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--ink); color: var(--cream); font-family: var(--mono); font-size: 11px; letter-spacing: 0.07em; text-transform: uppercase; min-height: 44px; padding: 0 22px; box-sizing: border-box; white-space: nowrap; padding: 11px 16px; border-radius: var(--r-full); transition: transform .15s, background .15s; }
 .cta:hover { transform: translateY(-1px); background: var(--orange); }
