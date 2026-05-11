@@ -1,4 +1,6 @@
-const Footer = () => (
+import React from "react";
+
+export const Footer = () => (
   <footer>
     <div className="wrap">
       <h2 className="footer-mega">stay weird<em>,</em><br />stay shipping<em>.</em></h2>
@@ -41,4 +43,3 @@ const Footer = () => (
     </div>
   </footer>
 );
-Object.assign(window, { Footer });

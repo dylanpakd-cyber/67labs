@@ -1,3 +1,6 @@
+import React from "react";
+import { Eyebrow } from "./atoms";
+
 const Portrait = ({ which, color }) => {
   const dots = [];
   const seed = which === "DP" ? 1 : which === "OK" ? 2 : 3;
@@ -21,7 +24,7 @@ const Portrait = ({ which, color }) => {
   );
 };
 
-const Operators = () => {
+export const Operators = () => {
   const people = [
     {
       init: "DP", color: "orange",
@@ -78,4 +81,3 @@ const Operators = () => {
   );
 };
 
-Object.assign(window, { Operators });

@@ -1,4 +1,6 @@
-const Hero = () => {
+import React from "react";
+
+export const Hero = () => {
   const [bigIdx, setBigIdx] = React.useState(0);
   const [slide, setSlide] = React.useState(0);
   const words = ["brainrot", "the feed", "doomscrolls", "shitposts", "the algo", "the timeline"];
@@ -141,4 +143,3 @@ const Hero = () => {
     </section>
   );
 };
-Object.assign(window, { Hero });

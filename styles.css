@@ -77,7 +77,7 @@ img, svg { display: block; max-width: 100%; }
 .hero-tape-track { display: flex; width: max-content; animation: hero-tape-scroll 42s linear infinite; }
 .hero-tape-set { display: flex; gap: 14px; padding-right: 14px; flex-shrink: 0; }
 @keyframes hero-tape-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-.hero-tape-dead { display: flex; gap: 14px; nowrap; mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
+.hero-tape-dead { display: flex; gap: 14px; flex-wrap: nowrap; mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
 
 .hero-mark { margin: 0; display: flex; flex-direction: column; gap: 18px; padding: 18px 0 36px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
 .hm-row { display: flex; align-items: baseline; gap: 8px; }
@@ -347,7 +347,7 @@ img, svg { display: block; max-width: 100%; }
 /* PROJECTS */
 .section-tinted { background: linear-gradient(180deg, var(--cream) 0%, #ece6d6 100%); }
 .proj-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; }
-.proj { position: relative; background: var(--paper); border: 1px solid var(--ink); border-radius: var(--r-md); padding: 0; display: flex; flex-direction: column; min-height: 380px; overflow: hidden;n; transition: transform .3s, box-shadow .3s; }
+.proj { position: relative; background: var(--paper); border: 1px solid var(--ink); border-radius: var(--r-md); padding: 0; display: flex; flex-direction: column; min-height: 380px; overflow: hidden; transition: transform .3s, box-shadow .3s; }
 .proj.w-6 { grid-column: span 6; min-height: 460px; }
 .proj.w-3 { grid-column: span 3; min-height: 400px; }
 .proj.w-2 { grid-column: span 2; min-height: 360px; }

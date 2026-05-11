@@ -1,4 +1,7 @@
-const Nav = () => (
+import React from "react";
+import { Clock, Pulse } from "./atoms";
+
+export const Nav = () => (
   <nav className="nav">
     <div className="wrap nav-inner">
       <a href="#" className="brand" aria-label="67 Labs">
@@ -22,4 +25,3 @@ const Nav = () => (
     </div>
   </nav>
 );
-Object.assign(window, { Nav });

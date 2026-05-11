@@ -1,4 +1,6 @@
-const Manifesto = () => {
+import React from "react";
+
+export const Manifesto = () => {
   const items = [
     { k: "01", v: "Make the joke. Then the business.", c: "lime" },
     { k: "02", v: "Six bets. No favorites.", c: "orange" },
@@ -36,4 +38,3 @@ const Manifesto = () => {
     </section>
   );
 };
-Object.assign(window, { Manifesto });

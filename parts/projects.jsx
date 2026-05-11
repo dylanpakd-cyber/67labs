@@ -1,3 +1,6 @@
+import React from "react";
+import { Eyebrow } from "./atoms";
+
 /* Per-project art components. Each SVG is its own tiny ad. */
 
 const ArtMoonshot = () => {
@@ -298,7 +301,7 @@ const ArtRerun = () => (
 
 const ART = { moonshot: ArtMoonshot, signalrooms: ArtSignalrooms, agentpeek: ArtAgentpeek, "roomba.fm": ArtRoomba, "doppler.email": ArtDoppler, "rerun.studio": ArtRerun };
 
-const Projects = () => {
+export const Projects = () => {
   const items = [
     { w: "w-6", key: "moonshot", name: "moonshot", domain: "moonshot.computer", tag: "Live", status: "live",
       kind: "The AI thought layer",
@@ -359,4 +362,3 @@ const Projects = () => {
     </section>
   );
 };
-Object.assign(window, { Projects });

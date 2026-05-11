@@ -1,4 +1,7 @@
-const Dispatch = () => {
+import React from "react";
+import { Eyebrow } from "./atoms";
+
+export const Dispatch = () => {
   const [email, setEmail] = React.useState("");
   const [sent, setSent] = React.useState(false);
   const submit = (e) => { e.preventDefault(); if (email) setSent(true); };
@@ -34,4 +37,3 @@ const Dispatch = () => {
     </section>
   );
 };
-Object.assign(window, { Dispatch });

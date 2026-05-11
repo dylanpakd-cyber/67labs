@@ -1,14 +1,17 @@
-/* atoms */
-const Clock = () => {
+import React from "react";
+
+export const Clock = () => {
   const [t, setT] = React.useState(new Date());
   React.useEffect(() => { const id = setInterval(() => setT(new Date()), 1000); return () => clearInterval(id); }, []);
   return <span className="clock">SF · {t.toLocaleTimeString("en-US", { timeZone: "America/Los_Angeles", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false })}</span>;
 };
-const Pulse = () => <span className="pulse" />;
-const Eyebrow = ({ n, label }) => (<div className="eyebrow"><span className="n">{n}</span><span>{label}</span></div>);
+
+export const Pulse = () => <span className="pulse" />;
+
+export const Eyebrow = ({ n, label }) => (<div className="eyebrow"><span className="n">{n}</span><span>{label}</span></div>);
 
 /* Shared video frame — autoplays muted, click toggles audio + ensures play */
-const MoonVideo = ({ src, title = "moonshot · launch", caption = "click to hear", compact = false }) => {
+export const MoonVideo = ({ src, title = "moonshot · launch", caption = "click to hear", compact = false }) => {
   const ref = React.useRef(null);
   const [muted, setMuted] = React.useState(true);
   const [ready, setReady] = React.useState(false);
@@ -73,5 +76,3 @@ const MoonVideo = ({ src, title = "moonshot · launch", caption = "click to hear
     </div>
   );
 };
-
-Object.assign(window, { Clock, Pulse, Eyebrow, MoonVideo });

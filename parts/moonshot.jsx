@@ -1,4 +1,7 @@
-const Moonshot = () => {
+import React from "react";
+import { Eyebrow, MoonVideo } from "./atoms";
+
+export const Moonshot = () => {
   return (
     <section id="moonshot" className="section dark">
       <div className="wrap">
@@ -32,4 +35,3 @@ const Moonshot = () => {
     </section>
   );
 };
-Object.assign(window, { Moonshot });
