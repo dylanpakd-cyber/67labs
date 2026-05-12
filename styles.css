@@ -425,6 +425,8 @@ img, svg { display: block; max-width: 100%; }
 .dispatch-form button { background: var(--lime); color: var(--ink); font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; padding: 13px 20px; border-radius: var(--r-full); }
 .dispatch-form button:hover { background: var(--orange); color: var(--cream); }
 .dispatch-form .ok { color: var(--lime); padding: 13px 0; font-family: var(--mono); font-size: 12px; }
+.dispatch-form button:disabled, .dispatch-form input:disabled { opacity: 0.6; cursor: not-allowed; }
+.dispatch-form .form-error { color: var(--orange); padding: 8px 0 0; font-family: var(--mono); font-size: 11px; flex-basis: 100%; }
 .dispatch-list { display: flex; flex-direction: column; }
 .dispatch-list .row { padding: 22px 0; border-bottom: 1px solid var(--ink); display: flex; flex-direction: column; gap: 4px; }
 .dispatch-list .row:first-child { border-top: 1px solid var(--ink); }
