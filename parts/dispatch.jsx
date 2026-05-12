@@ -36,7 +36,10 @@ export const Dispatch = () => {
             <h3>Mail from the lab. <em>Useful</em>, occasionally serious.</h3>
             <p>Weekly notes on what we shipped, what we deleted, and what we are still pretending to understand. About 700 words. No tracking.</p>
             {sent ? (
-              <div className="ok">✓ You are in. First letter lands this Friday.</div>
+              <div className="ok">
+                <div>✓ Confirm sent — tap the link in your inbox.</div>
+                <div className="ok-sub">Once you lock in, the lab ships you a letter every Friday.</div>
+              </div>
             ) : (
               <form className="dispatch-form" onSubmit={submit}>
                 <input
