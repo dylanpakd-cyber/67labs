@@ -53,7 +53,7 @@ export const Hero = () => {
   const cycle = () => setSlide(s => (s + 1) % slides.length);
 
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="wrap">
         <div className="hero-top">
           <div className="badge"><span className="dot" /> Studio open · Est. 2026 · San Francisco</div>
